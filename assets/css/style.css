@@ -9,7 +9,7 @@ body{
 
 /***************** HEADER ******************/
 
-header{
+.header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,12 +18,15 @@ a {
     text-decoration: none;
     color: black;
 }
-.puceHeader{
+.nav__list{
     display: flex;
     list-style: none;
 }
-ul .liBorder{
+.nav__item{
     border-right: 1px solid black;
+}
+.nav__item--not--border{
+    border: initial;
 }
 ul li{
     padding: 0px 20px;
@@ -31,13 +34,13 @@ ul li{
 
 /***************** INDEX **************/
 
-#mainIndex{
+.main__index{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     margin:10rem 0rem;
 }
-#imgProfil{
+.main__image__profil{
     width: 40%;
     min-width: 400px;
     max-width: 480px;
@@ -45,33 +48,33 @@ ul li{
     margin-right: 80px;
     cursor: pointer;
 }
-#Apropos{
+.about{
     width: 25rem;
 }
-h2{
+.about__title{
     font-size: 5rem;
     margin-bottom: 20px;
     margin-top: 0px;
 }
-#pmoi{
+.about__my{
     font-size: 1.7rem;
     font-weight: 470;
     margin-bottom: 0px;
 }
-#myDescription{
+.about__description{
     font-size: 1.1rem;
     line-height: 2rem;
     margin-bottom: 50px;
 }
-#myDescription strong{
+.myDescription strong{
     font-weight: bold;
 }
-#button{
+.button{
     display: flex;
     justify-content: space-between;
     font-weight: bold;
 }
-#button a{
+.button__item{
     width: 6.5rem;
     height: 6.5rem;
     display: flex;
@@ -81,13 +84,13 @@ h2{
     border: 0.2px solid black;
     font-size: 1.1rem;
 }
-#boxCv{
+.button__cv{
     background-color: orange;
 }
-#boxProjets{
+.button__projets{
     background-color: red;
 }
-#boxContact{
+.button__contact{
     background-color: #80d8da;
 }
 
@@ -99,27 +102,27 @@ footer{
     justify-content: center;
     margin-top: 50px;
 }
-#divFooter{
+.footer__nav{
     width: 100%;
     border-top: 1px solid rgba(218, 211, 211, 0.903);
 }
-#divFooter2{
+.footer__list{
     display: flex;
     width: 98%;
     justify-content: space-between;
 }
-.title{
+.footer__item__title{
     font-weight: bolder;
     margin: 1rem 0rem;
 }
-#copyrigth{
+.footer__copyrigth{
     margin: 1rem 0rem;
 }
-#logoSociaux{
+.nav__reseau__sociaux{
     display: flex;
     justify-content: space-between;
 }
-#logoSociaux iconify-icon{
+.nav__sociaux__item{
     font-size: 1.5rem;
 }
 
@@ -215,3 +218,54 @@ textarea{
     font-weight: bold;
     font-size: 1.1rem;
 }
+
+/*----------------------RESPONSIVE----------------*/
+@media screen and (max-width: 1023px){
+
+    body{
+        padding: 0;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .nav__list{
+        padding: 0;
+    }
+    .main__index{
+        flex-direction: column;
+        margin:5rem 0rem;
+    }
+    .main__image__profil{
+        margin-right: 0;
+        min-width: 350px;
+        max-width: 350px;
+    }
+    .about{
+        text-align: center;
+    }
+    .about__title{
+        font-size: 3.7rem;
+        margin-bottom: 20px;
+        margin-top: 4rem;
+    }
+    .button{
+        justify-content: center;
+    }
+    .button__item{
+        width: 5.5rem;
+        height: 5.5rem;
+        margin-left: 1rem;
+    }
+    .button__item:first-child{
+        margin-left: 0;
+    }
+    .footer__list{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer__item{
+        margin-bottom: 1.3rem;
+    }
+}
+
