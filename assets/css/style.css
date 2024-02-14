@@ -111,7 +111,7 @@ footer{
     width: 98%;
     justify-content: space-between;
 }
-.footer__item__title{
+.item__title{
     font-weight: bolder;
     margin: 1rem 0rem;
 }
@@ -177,14 +177,14 @@ section h3{
 
 /****************** CONTACT ***************/
 
-#mainContact{
+.main__contact{
     /* padding: 0% 10%; */
     font-size: 1.15rem;
 }
-#mainContact h2{
+.container__title{
     font-size: 1.8rem;
 }
-#mainContact section{
+.section__container{
     display: flex;
     justify-content: space-evenly;
 }
@@ -196,7 +196,7 @@ section h3{
 .inputContact{
     height: 1.9rem;
 }
-.inputContact, #mainContact textarea{
+.inputContact, .main__contact textarea{
     width: 15rem;
 }
 textarea{
