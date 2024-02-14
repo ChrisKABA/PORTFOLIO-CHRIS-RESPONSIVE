@@ -153,25 +153,25 @@ section h3{
     margin-bottom: 0px;
 }
 /****************** PROJETS ***************/
-#mainProjets{
+.main__projets{
     padding: 0% 5%;
 }
-#h2Projets{
+.main__projets__title{
     font-size: 2rem;
 }
-#mainProjets section{
+.section__content{
     display: flex;
     justify-content: space-between;
     padding: 2rem;
 }
-.textProjets{
+.section__content__item{
     width: 40%;
 }
-.boxSiteProjets{
+.projets__picture{
     width: 40%;
     border: 20px solid rgb(210, 208, 208);
 }
-.imgSiteProjets{
+.projets__picture__content{
     width: 100%;
 }
 
