@@ -188,27 +188,27 @@ section h3{
     display: flex;
     justify-content: space-evenly;
 }
-.blocContact{
+.input__group{
     display: flex;
     gap: 6%;
     margin-bottom: 10px;
 }
-.inputContact{
+.input__item{
     height: 1.9rem;
 }
-.inputContact, .main__contact textarea{
+.input__item, .main__contact textarea{
     width: 15rem;
 }
 textarea{
     height: 150px;
 }
-#mainContact input, #mainContact textarea{
+.input__item, .textarea--width{
     margin-top: 10px;
 }
-#blocContact3{
+.input__group--align--item{
     align-items: flex-end;
 }
-#btnEnvoyer{
+.button__envoyer{
     border-radius: 50%;
     height: 160px;
     width: 160px;
