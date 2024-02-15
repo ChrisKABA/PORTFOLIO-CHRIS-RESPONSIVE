@@ -44,7 +44,7 @@ ul li{
     width: 40%;
     min-width: 400px;
     max-width: 480px;
-    border-radius: 100rem;
+    border-radius: 50%;
     margin-right: 80px;
     cursor: pointer;
 }
@@ -128,28 +128,31 @@ footer{
 
 /****************** CV *******************/
 
-#mainCv{
+.main__cv{
     padding: 0px 6.3rem;
 }
-#h2Cv{
+.main__cv__title{
     font-size: 1.8rem;
     margin-bottom: 2.7rem;
 }
-.sectionCv{
+.section__item__list{
     border-top: 1px solid rgb(202, 196, 196);
     margin-top: 50px;
 }
-section h3{
+.section__item__list--not--border{
+    border: none;
+}
+.section__item__list__title{
     font-size: 1.4rem;
     margin-bottom: 2.3rem;
     margin-top: 50px;
 }
-.headerCvH4{
+.article__item__header{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.headerCvH4 h4{
+.article__item__title{
     margin-bottom: 0px;
 }
 /****************** PROJETS ***************/
@@ -220,45 +223,80 @@ textarea{
 }
 
 /*----------------------RESPONSIVE----------------*/
+
 @media screen and (max-width: 1023px){
+
+    /*--------------RESET--------------*/
 
     body{
         padding: 0;
     }
+
+    /*--------------HEADER--------------*/
+
     .header{
         flex-direction: column;
+    }
+    .header__logo{
+        display: flex;
+        height: 3rem;
+        align-items: center;
+        font-size: 1rem;
     }
     .nav__list{
         padding: 0;
     }
+
+    /*--------------INDEX--------------*/
+
     .main__index{
         flex-direction: column;
-        margin:5rem 0rem;
+        margin:4rem 0rem;
     }
     .main__image__profil{
         margin-right: 0;
-        min-width: 350px;
-        max-width: 350px;
+        min-width: 290px;
+        max-width: 400px;
+        width: 85%;
     }
     .about{
         text-align: center;
+        width: 90%;
     }
     .about__title{
-        font-size: 3.7rem;
-        margin-bottom: 20px;
+        font-size: 2.8rem;
+        margin-bottom: 0px;
         margin-top: 4rem;
+    }
+    .about__my{
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+    .about__description{
+        font-size: 0.95rem;
+        margin-bottom: 50px;
     }
     .button{
         justify-content: center;
     }
     .button__item{
-        width: 5.5rem;
-        height: 5.5rem;
+        width: 4.9rem;
+        height: 4.9rem;
         margin-left: 1rem;
     }
     .button__item:first-child{
         margin-left: 0;
     }
+
+    /*---------------CONTACT-------------*/
+
+    .section__container{
+        flex-direction: column;
+    }
+
+
+    /*---------FOOTER------*/
+
     .footer__list{
         flex-direction: column;
         align-items: center;
