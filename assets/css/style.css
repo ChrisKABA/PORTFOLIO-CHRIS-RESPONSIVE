@@ -226,28 +226,32 @@ textarea{
 
 @media screen and (max-width: 1023px){
 
-    /*--------------HEADER--------------*/
-
-    .header__logo{
-        display: flex;
-        height: 3rem;
-        align-items: center;
-    }
-
-    /*--------------INDEX--------------*/
+    /*--------------RESET--------------*/
 
     body{
         padding: 0;
     }
+
+    /*--------------HEADER--------------*/
+
     .header{
         flex-direction: column;
+    }
+    .header__logo{
+        display: flex;
+        height: 3rem;
+        align-items: center;
+        font-size: 1rem;
     }
     .nav__list{
         padding: 0;
     }
+
+    /*--------------INDEX--------------*/
+
     .main__index{
         flex-direction: column;
-        margin:5rem 0rem;
+        margin:4rem 0rem;
     }
     .main__image__profil{
         margin-right: 0;
