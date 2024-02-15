@@ -28,7 +28,7 @@ a {
 .nav__item--not--border{
     border: initial;
 }
-ul li{
+.nav__item{
     padding: 0px 20px;
 }
 
