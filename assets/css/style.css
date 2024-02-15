@@ -199,7 +199,7 @@ footer{
 .input__item{
     height: 1.9rem;
 }
-.input__item, .main__contact textarea{
+.input__item, .textarea{
     width: 15rem;
 }
 textarea{
@@ -290,10 +290,48 @@ textarea{
 
     /*---------------CONTACT-------------*/
 
+    .main__contact{
+        /* padding: 0% 10%; */
+        font-size: 1.11rem;
+    }
+    .container__title{
+        font-size: 1.5rem;
+    }
     .section__container{
         flex-direction: column;
+        justify-content:initial;
+        align-items: center;
+        margin-top: 3.5rem;
     }
-
+    .item__description__contact{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .input__group{
+        display: flex;
+        flex-direction: column;
+        gap:initial;
+        margin-bottom: 10px;
+    }
+    .input__item{
+        margin-bottom: 1rem;
+    }
+    .input__item, .textarea{
+        width: 90vw;
+    }
+    .textarea{
+        margin-bottom: 1.5rem;
+        resize : none;
+    }
+    .input__group--align--item{
+        align-items: center;
+    }
+    .button__envoyer{
+        border-radius: 50%;
+        height: 140px;
+        width: 140px;
+        font-size: 1rem;
+    }
 
     /*---------FOOTER------*/
 
