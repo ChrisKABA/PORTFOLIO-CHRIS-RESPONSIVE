@@ -163,16 +163,18 @@ footer{
     font-size: 2rem;
 }
 .section__content{
+    padding: 2rem;
+}
+.section__content__list{
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
 }
 .section__content__item{
     width: 40%;
 }
 .projets__picture{
     width: 40%;
-    border: 20px solid rgb(210, 208, 208);
+    border: 20px solid #dfdfdf;
 }
 .projets__picture__content{
     width: 100%;
@@ -331,6 +333,36 @@ textarea{
         height: 140px;
         width: 140px;
         font-size: 1rem;
+    }
+
+    /*---------------PROJETS-------------*/
+    .main__projets{
+        padding: 0%;
+        margin-top: 1.8rem;
+    }
+    .main__projets__title{
+        text-align: center;
+    }
+    .main__projets__title{
+        font-size: 1.55rem;
+        margin-bottom: 0;
+
+    }
+    .section__content{
+        padding: 0.6rem;
+    }
+    .section__content__list{
+        flex-direction: column-reverse;
+    }
+    .section__content__item{
+        width: auto;
+    }
+    .section__content__title{
+        font-size: 1.1rem;
+    }
+    .projets__picture{
+        width: auto;
+        border: 15px solid #dfdfdf;
     }
 
     /*---------FOOTER------*/
