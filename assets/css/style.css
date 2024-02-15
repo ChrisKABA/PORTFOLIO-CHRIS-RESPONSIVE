@@ -406,5 +406,8 @@ textarea{
     .footer__item{
         margin-bottom: 1.3rem;
     }
+    .footer__nav{
+        width: 90%;
+    }
 }
 
