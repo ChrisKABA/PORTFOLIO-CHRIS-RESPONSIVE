@@ -365,6 +365,11 @@ textarea{
         border: 15px solid #dfdfdf;
     }
 
+    /*---------------CV-------------*/
+    .main__cv{
+        padding: 0px 1rem;
+    }
+
     /*---------FOOTER------*/
 
     .footer__list{
