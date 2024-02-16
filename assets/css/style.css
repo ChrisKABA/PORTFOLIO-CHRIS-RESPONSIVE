@@ -299,11 +299,10 @@ textarea{
     /*--------------CONTACT-TABLETTE------------*/
 
     .main__contact{
-        /* padding: 0% 10%; */
-        font-size: 1.11rem;
+        font-size: 1.16rem;
     }
     .container__title{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .section__container{
         flex-direction: column;
@@ -315,17 +314,19 @@ textarea{
         text-align: center;
         margin-bottom: 3rem;
     }
+    .form{
+        width: 100%;
+    }
     .input__group{
-        display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         gap:initial;
         margin-bottom: 10px;
     }
     .input__item{
         margin-bottom: 1rem;
     }
-    .input__item, .textarea{
-        width: 90vw;
+    .input__item, .textarea,.button__submit--aligne{
+        width: 40vw;
     }
     .textarea{
         margin-bottom: 1.5rem;
@@ -333,6 +334,10 @@ textarea{
     }
     .input__group--align--item{
         align-items: center;
+    }
+    .button__submit--aligne{
+        display: flex;
+        align-items: flex-end;
     }
     .button__envoyer{
         border-radius: 50%;
@@ -406,26 +411,13 @@ textarea{
     /*----------CONTACT-SMART-PHONE---------*/
 
     .main__contact{
-        /* padding: 0% 10%; */
         font-size: 1.11rem;
     }
     .container__title{
         font-size: 1.5rem;
     }
-    .section__container{
-        flex-direction: column;
-        justify-content:initial;
-        align-items: center;
-        margin-top: 3.5rem;
-    }
-    .item__description__contact{
-        text-align: center;
-        margin-bottom: 3rem;
-    }
     .input__group{
-        display: flex;
         flex-direction: column;
-        gap:initial;
         margin-bottom: 10px;
     }
     .input__item{
@@ -440,6 +432,10 @@ textarea{
     }
     .input__group--align--item{
         align-items: center;
+    }
+    .button__submit--aligne{
+        display: bloc;
+        width: auto;
     }
     .button__envoyer{
         border-radius: 50%;
