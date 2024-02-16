@@ -461,6 +461,11 @@ textarea{
     .container__title{
         font-size: 1.5rem;
     }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .input__group{
         flex-direction: column;
         margin-bottom: 10px;
