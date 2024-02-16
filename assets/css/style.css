@@ -227,49 +227,52 @@ textarea{
     font-size: 1.1rem;
 }
 
-/*----------------------RESPONSIVE----------------*/
+/*-------------------------RESPONSIVE---------------------*/
+
+
+/********************* RESPONSIVE-TABLETTE *****************************/
 
 @media screen and (max-width: 1023px){
 
-    /*--------------RESET--------------*/
+    /*--------------RESET-TABLETTE-------------*/
 
     body{
-        padding: 0;
+        padding: 0rem 2.3rem;
     }
 
-    /*--------------HEADER--------------*/
+    /*--------------HEADER-TABLETTE-------------*/
 
     .header{
-        flex-direction: column;
+        flex-direction: row;
     }
     .header__logo{
         display: flex;
-        height: 3rem;
         align-items: center;
-        font-size: 1rem;
+        height: auto;
+        font-size: auto;
     }
     .nav__list{
         padding: 0;
     }
 
-    /*--------------INDEX--------------*/
+     /*--------------INDEX-TABLETTE-------------*/
 
-    .main__index{
+     .main__index{
         flex-direction: column;
-        margin:4rem 0rem;
+        margin:5rem 0rem;
     }
     .main__image__profil{
         margin-right: 0;
         min-width: 290px;
-        max-width: 400px;
-        width: 85%;
+        max-width: 500px;
+        width: 70%;
     }
     .about{
+        width: 75%;
         text-align: center;
-        width: 90%;
     }
     .about__title{
-        font-size: 2.8rem;
+        font-size: 3.7rem;
         margin-bottom: 0px;
         margin-top: 4rem;
     }
@@ -278,22 +281,129 @@ textarea{
         margin-top: 10px;
     }
     .about__description{
-        font-size: 0.95rem;
-        margin-bottom: 50px;
+        font-size: 1.05rem;
+        margin-bottom: 2rem;
     }
     .button{
         justify-content: center;
+    }
+    .button__item{
+        width: 7.2rem;
+        height: 7.2rem;
+        margin-left: 1.15rem;
+    }
+    .button__item:first-child{
+        margin-left: 0;
+    }
+
+    /*--------------CONTACT-TABLETTE------------*/
+
+    .main__contact{
+        /* padding: 0% 10%; */
+        font-size: 1.11rem;
+    }
+    .container__title{
+        font-size: 1.5rem;
+    }
+    .section__container{
+        flex-direction: column;
+        justify-content:initial;
+        align-items: center;
+        margin-top: 3.5rem;
+    }
+    .item__description__contact{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .input__group{
+        display: flex;
+        flex-direction: column;
+        gap:initial;
+        margin-bottom: 10px;
+    }
+    .input__item{
+        margin-bottom: 1rem;
+    }
+    .input__item, .textarea{
+        width: 90vw;
+    }
+    .textarea{
+        margin-bottom: 1.5rem;
+        resize : none;
+    }
+    .input__group--align--item{
+        align-items: center;
+    }
+    .button__envoyer{
+        border-radius: 50%;
+        height: 140px;
+        width: 140px;
+        font-size: 1rem;
+    }
+
+    /*--------------FOOTER-TABLETTE------------*/
+
+    .footer{
+        font-size: 1.2rem;
+    }
+    .footer__list{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer__item{
+        margin-bottom: 1.3rem;
+    }
+    .footer__nav{
+        width: 90%;
+    }
+    /***************RESPONSIVE-SMART-PHONE**************/
+
+@media screen and (max-width: 767px){
+
+    /*----------RESET-SMART-PHONE----------*/
+
+    body{
+        padding: 0;
+    }
+
+    /*---------HEADER-SMART-PHONE---------*/
+
+    .header{
+        flex-direction: column;
+    }
+    .header__logo{
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    /*----------INDEX-SMART-PHONE---------*/
+
+    .main__index{
+        margin:4rem 0rem;
+    }
+    .main__image__profil{
+        min-width: 290px;
+        max-width: 400px;
+        width: 85%;
+    }
+    .about{
+        width: 90%;
+    }
+    .about__title{
+        font-size: 2.8rem;
+    }
+    .about__description{
+        font-size: 0.95rem;
+        margin-bottom: 50px;
     }
     .button__item{
         width: 4.9rem;
         height: 4.9rem;
         margin-left: 1rem;
     }
-    .button__item:first-child{
-        margin-left: 0;
-    }
 
-    /*---------------CONTACT-------------*/
+    /*----------CONTACT-SMART-PHONE---------*/
 
     .main__contact{
         /* padding: 0% 10%; */
@@ -396,18 +506,13 @@ textarea{
         padding: 0 1px;
     }
 
-    /*---------FOOTER------*/
+    /*-------------FOOTER---------*/
 
-    .footer__list{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .footer__item{
-        margin-bottom: 1.3rem;
-    }
-    .footer__nav{
-        width: 90%;
+    .footer{
+        font-size: 1rem;
     }
 }
+
+}
+
 
