@@ -450,6 +450,7 @@ textarea{
         width: 4.9rem;
         height: 4.9rem;
         margin-left: 1rem;
+        font-size: 0.97rem;
     }
 
     /*----------CONTACT-SMART-PHONE---------*/
@@ -546,5 +547,14 @@ textarea{
         width: 90%;
     }
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1135px) {
+    .button__item{
+        width: 6rem;
+        height: 6rem;
+        margin-left: 1rem;
+    }
+}
+
 
 
