@@ -104,7 +104,7 @@ footer{
 }
 .footer__nav{
     width: 100%;
-    border-top: 1px solid rgba(218, 211, 211, 0.97);
+    border-top: 1px solid rgba(218, 211, 211, 0.99);
 }
 .footer__list{
     display: flex;
@@ -394,29 +394,18 @@ textarea{
         padding: 0 1px;
     }
 
-    /*-------------FOOTER---------*/
-
-    .footer{
-        font-size: 1rem;
-    }
-
-
     /*--------------FOOTER-TABLETTE------------*/
 
     .footer{
-        font-size: 1.2rem;
-    }
-    .footer__list{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        font-size: 0.9rem;
     }
     .footer__item{
         margin-bottom: 1.3rem;
     }
     .footer__nav{
-        width: 90%;
+        width: 100%;
     }
+}
     /***************RESPONSIVE-SMART-PHONE**************/
 
 @media screen and (max-width: 767px){
@@ -499,7 +488,7 @@ textarea{
         font-size: 1rem;
     }
 
-    /*--------------PROJETS-SMART-PHON------------*/
+    /*--------------PROJETS-SMART-PHONE------------*/
 
     .main__projets{
         margin-top: 1.8rem;
@@ -543,13 +532,19 @@ textarea{
         padding-inline-start: 30px;
     }
 
-    /*-------------FOOTER---------*/
+    /*-----------FOOTER-SMART-PHONE--------*/
 
     .footer{
         font-size: 1rem;
     }
-}
-
+    .footer__list{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer__nav{
+        width: 90%;
+    }
 }
 
 
