@@ -249,7 +249,7 @@ textarea{
         display: flex;
         align-items: center;
         height: auto;
-        font-size: auto;
+        font-size :initial;
     }
     .nav__list{
         padding: 0;
@@ -484,7 +484,7 @@ textarea{
         align-items: center;
     }
     .button__submit--aligne{
-        display: bloc;
+        display: block;
         width: auto;
     }
     .button__envoyer{
