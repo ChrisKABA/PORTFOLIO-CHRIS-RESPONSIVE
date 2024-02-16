@@ -370,7 +370,36 @@ textarea{
         border: 25px solid #dfdfdf;
     }
 
-    /*---------------CV--------------*/
+    /*---------------CV-TABLETTE-------------*/
+
+    .main__cv{
+        padding: 0px 1rem;
+    }
+    .main__cv__title{
+        font-size: 1.5rem;
+        margin-bottom: 2.7rem;
+        margin-top: 4rem;
+    }
+    .section__item__list__title{
+        font-size: 1.17rem;
+        margin-bottom: 1.5rem;
+    }
+    .section_list__puce{
+        padding-inline-start: 20px;
+    }
+    .section_list__puce--padding{
+        padding-inline-start: 30px;
+    }
+    .section_list__puce__item{
+        padding: 0 1px;
+    }
+
+    /*-------------FOOTER---------*/
+
+    .footer{
+        font-size: 1rem;
+    }
+
 
     /*--------------FOOTER-TABLETTE------------*/
 
@@ -501,14 +530,6 @@ textarea{
     }
 
     /*---------------CV-SMART-PHONE-------------*/
-    .main__cv{
-        padding: 0px 1rem;
-    }
-    .main__cv__title{
-        font-size: 1.5rem;
-        margin-bottom: 2.7rem;
-        margin-top: 4rem;
-    }
     .section__item__list__title{
         font-size: 1.17rem;
         margin-bottom: 1.5rem;
@@ -518,14 +539,8 @@ textarea{
         align-items: flex-start;
         justify-content: flex-start;
     }
-    .section_list__puce{
-        padding-inline-start: 20px;
-    }
     .section_list__puce--padding{
         padding-inline-start: 30px;
-    }
-    .section_list__puce__item{
-        padding: 0 1px;
     }
 
     /*-------------FOOTER---------*/
