@@ -27,11 +27,11 @@
                 <div>
                     <h2 class="container__title">Contact</h2>
                     <div class="item__title">Phone</div>
-                    <div class="item__content"><a href="tel:+243812136337">+243812136337</a></div>
+                    <div class="item__content"><a href="tel:+243812136337">+243 81 21 36 337</a></div>
                 </div>
                 <div>
                     <div class="item__title">Email</div>
-                    <div><a href="mailto:Chriskaba7@gmail.com">Chriskaba7@gmail.com</a></div>
+                    <div><a href="mailto:Chris.kaba.tuala@gmail.com">Chris.kaba.tuala@gmail.com</a></div>
                 </div>
             </div>
             <form action="./index.html" class="form">
@@ -72,11 +72,11 @@
             <div class="footer__list">
                 <div class="footer__item">
                     <div class="item__title">Télephone</div>
-                    <div class="tem__content"><a href="tel:+243812136337">+243812136337</a></div>
+                    <div class="item__content"><a href="tel:+243812136337">+243 81 21 36 337</a></div>
                 </div>
                 <div class="footer__item">
                     <div class="item__title">Email</div>
-                    <div><a href="mailto:Chriskaba7@gmail.com">Chriskaba7@gmail.com</a></div>
+                    <div><a href="mailto:Chris.kaba.tuala@gmail.com">Chris.kaba.tuala@gmail.com</a></div>
                 </div>
                 <div class="footer__item">
                     <div class="item__title">Suivez-moi</div>
@@ -84,15 +84,33 @@
                         <!-- <i class="fa fa-instagram" aria-hidden="true"></i>
                         <i class="fa fa-linkedin" aria-hidden="true"></i>
                         <i class="fa fa-facebook-official" aria-hidden="true"></i> -->
+                        <a href="https://github.com/ChrisKABA"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12.001 2c-5.525 0-10 4.475-10 10a9.99 9.99 0 0 0 6.837 9.488c.5.087.688-.213.688-.476c0-.237-.013-1.024-.013-1.862c-2.512.463-3.162-.612-3.362-1.175c-.113-.288-.6-1.175-1.025-1.413c-.35-.187-.85-.65-.013-.662c.788-.013 1.35.725 1.538 1.025c.9 1.512 2.337 1.087 2.912.825c.088-.65.35-1.087.638-1.337c-2.225-.25-4.55-1.113-4.55-4.938c0-1.088.387-1.987 1.025-2.687c-.1-.25-.45-1.275.1-2.65c0 0 .837-.263 2.75 1.024a9.3 9.3 0 0 1 2.5-.337c.85 0 1.7.112 2.5.337c1.913-1.3 2.75-1.024 2.75-1.024c.55 1.375.2 2.4.1 2.65c.637.7 1.025 1.587 1.025 2.687c0 3.838-2.337 4.688-4.562 4.938c.362.312.675.912.675 1.85c0 1.337-.013 2.412-.013 2.75c0 .262.188.574.688.474A10.02 10.02 0 0 0 22 12c0-5.525-4.475-10-10-10"/></svg></a>
+                        <a href="https://www.linkedin.com/in/christian-kaba"><iconify-icon icon="basil:linkedin-solid" class="nav__sociaux__item" aria-label="My description"></iconify-icon></a>
                         <a href="#"><iconify-icon icon="iconoir:instagram" class="nav__sociaux__item" aria-label="My description"></iconify-icon></a>
-                        <a href="#"><iconify-icon icon="basil:linkedin-solid" class="nav__sociaux__item" aria-label="My description"></iconify-icon></a>
-                        <a href=""><iconify-icon icon="ant-design:facebook-filled" class="nav__sociaux__item" aria-label="My description"></iconify-icon></a>
                     </div>
                 </div>
-                <div class="footer__copyrigth">© 2024 By Chris kaba</div>
+                <div class="footer__copyrigth">© 2025 By Chris kaba</div>
             </div>
         </div>
     </footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("8BIi95acBG8fcS2wT"); // Remplacez par votre USER_ID
+        })();
+
+        document.querySelector(".form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm("service_268g5vp", "template_js1wclj", this)
+                .then(function() {
+                    alert("Message envoyé avec succès !");
+                    document.querySelector(".form").reset();
+                }, function(error) {
+                    alert("Échec de l'envoi : " + JSON.stringify(error));
+                });
+        });
+    </script>
 </body>
 </html>
